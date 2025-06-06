@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eid Mubarak 🌙</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+    <style>
+      body {
+        background: linear-gradient(to bottom, #0f172a, #1e293b);
+        font-family: "Poppins", sans-serif;
+      }
+      .gradient-text {
+        background: linear-gradient(to right, #facc15, #f472b6);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    </style>
+  </head>
+  <body
+    class="text-white flex items-center justify-center min-h-screen p-6 flex-col text-center"
+  >
+    <h1
+      class="text-4xl md:text-6xl font-bold gradient-text animate-pulse drop-shadow-lg"
+    >
+      Eid Mubarak!
+    </h1>
+    <p class="text-lg mt-4 max-w-xl mx-auto text-gray-300">
+      May this Eid bring light, happiness, and barakah into your life 🌙
+    </p>
+
+    <div class="mt-10">
+      <dotlottie-player
+        src="https://lottie.host/710826c0-3d27-47ab-9b97-7ad1ff9b2558/rnyxnErSQq.json"
+        background="transparent"
+        speed="1"
+        style="width: 300px; height: 300px"
+        loop
+        autoplay
+      ></dotlottie-player>
+    </div>
+
+    <form
+      action="https://formsubmit.co/farhadurrahman.help4@gmail.com"
+      method="POST"
+      class="mt-10 bg-white/10 p-4 rounded-xl max-w-md w-full"
+    >
+      <h2 class="text-xl font-semibold mb-2 text-yellow-200">
+        Send Your Wishes
+      </h2>
+
+      <textarea
+        name="message"
+        placeholder="Write your Eid wish..."
+        required
+        class="w-full p-2 rounded-md bg-white/20 text-white resize-none focus:outline-none focus:ring focus:ring-pink-500"
+        rows="4"
+      ></textarea>
+
+      <input type="hidden" name="_captcha" value="false" />
+
+      <input
+        type="hidden"
+        name="_next"
+        value="https://eid-mubarak.farhadurrahman.xyz/thank-you.html"
+      />
+      <button
+        type="submit"
+        class="mt-3 bg-pink-500 hover:bg-pink-600 px-4 py-2 rounded-md font-bold transition"
+      >
+        Share Wish
+      </button>
+    </form>
+
+    <footer class="mt-10 text-xs text-gray-400">
+      &copy; 2025 | Crafted with 🌙 by
+      <a href="https://farhadurrahman.xyz" class="underline">Farhadur Rahman</a>
+    </footer>
+  </body>
+</html>

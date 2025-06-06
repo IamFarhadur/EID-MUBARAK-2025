@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank You</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.js"></script>
+    <style>
+      body {
+        background: linear-gradient(to bottom right, #0f172a, #1e293b);
+        font-family: "Poppins", sans-serif;
+      }
+      .gradient-text {
+        background: linear-gradient(to right, #34d399, #60a5fa);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    </style>
+  </head>
+  <body
+    class="flex items-center justify-center min-h-screen text-center text-white px-4"
+  >
+    <div class="space-y-6">
+      <div class="mt-10">
+        <dotlottie-player
+          src="https://lottie.host/710826c0-3d27-47ab-9b97-7ad1ff9b2558/rnyxnErSQq.json"
+          background="transparent"
+          speed="1"
+          style="width: 300px; height: 300px"
+          loop
+          autoplay
+        ></dotlottie-player>
+      </div>
+
+      <h1 class="text-3xl md:text-5xl font-bold gradient-text animate-pulse">
+        Thank You! 💌
+      </h1>
+      <p class="text-gray-300 max-w-md mx-auto">
+        Your Eid wish has been received! May your kindness be returned tenfold
+        🌙
+      </p>
+
+      <a
+        href="index.html"
+        class="inline-block bg-pink-500 hover:bg-pink-600 text-white px-6 py-3 rounded-lg font-semibold transition"
+      >
+        🔙 Back to Main Page
+      </a>
+    </div>
+  </body>
+</html>
